@@ -10,6 +10,12 @@ const {
 } = require('../controller/controller');
 
 
+// Route Default or Main
+router.get('/', (req, res) => {
+    res.send('Api Rest Working');
+
+})
+
 // Route Get all Products
 router.get('/obtainProduct', obtainProduct);
 

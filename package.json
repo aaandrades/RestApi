@@ -1,16 +1,20 @@
 {
-  "name": "expressapi",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Andres",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "pg": "^8.3.3"
-  }
+    "name": "expressapi",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "NODE_ENV=test nodemon --exec 'mocha -R'"
+    },
+    "author": "Andres",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "chai": "^4.2.0",
+        "chai-http": "^4.3.0",
+        "express": "^4.17.1",
+        "mocha": "^8.1.3",
+        "pg": "^8.3.3",
+        "request": "^2.88.2"
+    }
 }
