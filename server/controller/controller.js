@@ -41,11 +41,10 @@ const updateProduct = async(req, res) => {
     res.send('Producto actualizado correctamente');
 }
 
-
 // READ - SEARCH
 const searchProduct = async(req, res) => {
 
-    const response = await pool.query('SELECT * FROM product WHERE ID = $1', [req.params.id]);
+    const response = await pool.query('SELECT * FROM productos WHERE ID = $1', [req.params.id]);
     res.json(response.rows);
 }
 
