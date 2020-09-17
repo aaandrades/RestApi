@@ -4,5 +4,4 @@ orbs:
 workflows:
   node-tests:
     jobs:
-      steps:
-          command: mocha test --reporter mocha-junit-reporter
+      mocha test
